@@ -1,15 +1,14 @@
-const http = require("http");
+const express = require('express')
+const app = express()
 
-const host = 'localhost';
 const port = 8080;
 
-const requestListener = function (req, res) {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', "text/plain");
-  res.end(`Hola Mundo`);
-};
+app.use(express.static('public'))
 
-const server = http.createServer(requestListener);
-server.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`);
+app.get('/', function (req, res) {
+  res.sendFile(process.cwd() + '/index.html');
 });
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})

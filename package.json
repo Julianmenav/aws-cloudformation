@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name hellow_aws --log ../logs/app.log",
-    "stop": "node ./node_modules/pm2/bin/pm2 stop hello_aws",
+    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name node_app --log ../logs/node_app.log",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop node_app",
     "build": "echo 'Building",
     "dev": "nodemon server.js"
   },
@@ -23,6 +23,7 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
+    "express": "^4.18.2",
     "pm2": "^5.2.2"
   }
 }
