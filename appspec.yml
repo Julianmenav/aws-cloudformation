@@ -7,20 +7,20 @@ files:
 file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
-      - location: deploy/install_dependencies.sh
+    - location: deploy/install_dependencies.sh
       timeout: 1000
-      runas: asroot
-  AfterInstall:
-      - location: deploy/install.sh
+      runas: root
+  Install:
+    - location: deploy/install.sh
       timeout: 1000
-      runas: asroot
+      runas: root
   ApplicationStart:
     # Inicia la aplicación com ubuntu
     - location: deploy/start.sh
       timeout: 1000
-      runas: asroot
+      runas: root
   ApplicationStop:
   # Para la aplicación
     - location: deploy/stop.sh
       timeout: 1000
-      runas: asroot
+      runas: root
