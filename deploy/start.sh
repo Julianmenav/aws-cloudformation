@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd home/ubuntu/app
+cd /home/ubuntu/app
 npm start
