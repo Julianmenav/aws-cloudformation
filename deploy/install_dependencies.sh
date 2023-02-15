@@ -1,4 +1,4 @@
 #!/bin/bash
 
-apt install npm
-apt install nodejs
+apt install npm -y
+apt install nodejs -y
