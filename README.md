@@ -1,6 +1,7 @@
 # aws-cloudformation
 
-## Pasos para instalar Node en servidor Ubuntu 20.04
+## Primera clase - descargando la aplicación desde la instancia.
+### Pasos para instalar Node en servidor Ubuntu 20.04
 - Instalamos nvm
  ```
  $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
@@ -26,3 +27,8 @@ $ nvm install npm --lts
 - Git clone URL_REPO para clonar el repositorio en la instancia
 - npm install para instalar dependencias
 - npm start para correr el servidor mediante pm2
+
+## Usando CodeDeploy
+
+Aws leerá el archivo appspec.yml y ejecutará los scripts indicados para instalar la aplicación.
+
