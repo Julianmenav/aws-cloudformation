@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /home/ubuntu/app
-npm run stop
+#cd /home/ubuntu/app
+#npm run stop
