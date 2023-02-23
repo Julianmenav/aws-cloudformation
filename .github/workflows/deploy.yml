@@ -26,7 +26,7 @@ jobs:
         aws deploy create-deployment \
           --application-name application_node \
           --deployment-group deployment-group \
-          --github-location repository=${{github.repository}},commit-id=${{github.sha}}
+          --github-location repository=${{github.repository}},commitId=${{github.sha}}
 
     
 
